@@ -1,0 +1,91 @@
+:root {
+  --dusk: #43425d;
+  --cool-green: #3bb75e;
+  --pale-grey: #f0f0f7;
+  --pale-grey-two: #f1f1f3;
+  --gunmetal: #4d4f5c;
+  --cool-grey: #a3a6b4;
+  --warm-grey: #9c9c9c;
+  --silver: #cecfd0;
+  --dark-sky-blue: #5bc0de;
+  --cerulean: #0275d8;
+  --faded-orange: #f0ad4e;
+  --indigo-blue: #311b92; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #000; }
+
+body {
+  font-family: Source Sans Pro;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.54;
+  color: var(--gunmetal); }
+
+a {
+  text-decoration: none;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+button {
+  outline: none; }
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: transparent;
+  outline: none; }
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
