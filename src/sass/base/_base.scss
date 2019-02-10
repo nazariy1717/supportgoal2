@@ -30,7 +30,7 @@ html, body {
 }
 
 body{
-  font-family: Source Sans Pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -39,11 +39,12 @@ body{
 }
 
 a {
+  color: initial;
   text-decoration: none;
   transition: .3s all ease;
   &:hover{
+    color: initial;
     text-decoration: none;
-
   }
 }
 

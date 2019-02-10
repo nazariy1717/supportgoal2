@@ -4,15 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>SupportGoal Contacts</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/main.css"/>
 </head>
 <body>
 
 
+<header class="header">
+    <!--<ul class="navbar-nav navbar-right">-->
+    <!--<li class="dropdown navbar-user show">-->
+    <!--<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">-->
+    <!--<img src="../assets/img/user/user-13.jpg" alt="">-->
+    <!--<span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>-->
+    <!--</a>-->
+    <!--<div class="dropdown-menu dropdown-menu-right show" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(4px, 50px, 0px);">-->
+    <!--<a href="javascript:;" class="dropdown-item">Edit Profile</a>-->
+    <!--<a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>-->
+    <!--<a href="javascript:;" class="dropdown-item">Calendar</a>-->
+    <!--<a href="javascript:;" class="dropdown-item">Setting</a>-->
+    <!--<div class="dropdown-divider"></div>-->
+    <!--<a href="javascript:;" class="dropdown-item">Log Out</a>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--</ul>-->
+</header>
+
+<div class="wrapper">
+
+    <div class="sidebar">
+        <ul class="nav">
+            <li class="has-sub closed">
+                <a href="javascript:;">
+                    <b class="caret"></b>
+                    <i class="fa fa-th-large"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dashboard">
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Admin</a></li>
+            <li><a href="/">Contacts</a></li>
+            <li class="active">People</li>
+        </ul>
+        <div class="dashboard__content">
+            <ul class="people-nav">
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link active">All active <span>(33)</span></a>
+                </li>
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link">Potencial <span>(2)</span></a>
+                </li>
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link">Contacting <span>(2)</span></a>
+                </li>
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link">Informing <span>(2)</span></a>
+                </li>
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link">Deciding <span>(2)</span></a>
+                </li>
+                <li class="people-nav__item">
+                    <a href="/" class="people-nav__link">Partner <span>(2)</span></a>
+                </li>
+            </ul>
+            <div class="people-head">
+                <div class="row">
+                    <div class="column col-lg-6"></div>
+                    <div class="column col-lg-6"></div>
+                </div>
+            </div>
+            <table class="people-table table">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="check-box">
+                                <input type="checkbox" id="check_all"  name="check_all">
+                                <label for="check_all"></label>
+                            </div>
+                        </th>
+                        <th>NAME</th>
+                        <th>PHASE</th>
+                        <th>DATA</th>
+                        <th>CONTACTED</th>
+                        <th>RECURRING GIFT</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="check-box">
+                                <input type="checkbox" id="checkox-1"  name="checkox-1">
+                                <label for="checkox-1"></label>
+                            </div>
+                        </td>
+                        <td>Woman Peacoat</td>
+                        <td><span class="label label-potencial">Potential</span></td>
+                        <td>
+                            <i class="icon-email-outline people-table__icon"></i>
+                            <i class="icon-phone people-table__icon"></i>
+                        </td>
+                        <td>Aug 4 2018</td>
+                        <td>$50.00 monthly</td>
+                        <td>
+                            <a href="/" class="icon-pencil people-table__controls --edit" title="edit"></a>
+                            <a href="/" class="icon-close people-table__controls --delete" title="delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="check-box">
+                                <input type="checkbox" id="checkox-2"  name="checkox-2">
+                                <label for="checkox-2"></label>
+                            </div>
+                        </td>
+                        <td>Woman Peacoat</td>
+                        <td><span class="label label-partner">Partner</span></td>
+                        <td>
+                            <i class="icon-email-outline people-table__icon"></i>
+                            <i class="icon-phone people-table__icon"></i>
+                        </td>
+                        <td>Aug 4 2018</td>
+                        <td>$50.00 monthly</td>
+                        <td>
+                            <a href="/" class="icon-pencil people-table__controls --edit" title="edit"></a>
+                            <a href="/" class="icon-close people-table__controls --delete" title="delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="check-box">
+                                <input type="checkbox" id="checkox-3"  name="checkox-3">
+                                <label for="checkox-3"></label>
+                            </div>
+                        </td>
+                        <td>Woman Peacoat</td>
+                        <td><span class="label label-contacting">Contacting</span></td>
+                        <td>
+                            <i class="icon-email-outline people-table__icon"></i>
+                            <i class="icon-phone people-table__icon"></i>
+                        </td>
+                        <td>Aug 4 2018</td>
+                        <td>$50.00 monthly</td>
+                        <td>
+                            <a href="/" class="icon-pencil people-table__controls --edit" title="edit"></a>
+                            <a href="/" class="icon-close people-table__controls --delete" title="delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="check-box">
+                                <input type="checkbox" id="checkox-4"  name="checkox-4">
+                                <label for="checkox-4"></label>
+                            </div>
+                        </td>
+                        <td>levaca Womens Long…</td>
+                        <td><span class="label label-informing">Informing</span></td>
+                        <td>
+                            <i class="icon-email-outline people-table__icon"></i>
+                            <i class="icon-phone people-table__icon"></i>
+                        </td>
+                        <td>Aug 4 2018</td>
+                        <td>$50.00 monthly</td>
+                        <td>
+                            <a href="/" class="icon-pencil people-table__controls --edit" title="edit"></a>
+                            <a href="/" class="icon-close people-table__controls --delete" title="delete"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 </html>
