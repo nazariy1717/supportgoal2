@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-bell:before {
+  content: "\e90d";
+}
 .icon-home:before {
   content: "\e905";
 }

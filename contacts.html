@@ -12,31 +12,39 @@
 
 
 <header class="header">
-    <!--<ul class="navbar-nav navbar-right">-->
-    <!--<li class="dropdown navbar-user show">-->
-    <!--<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">-->
-    <!--<img src="../assets/img/user/user-13.jpg" alt="">-->
-    <!--<span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>-->
-    <!--</a>-->
-    <!--<div class="dropdown-menu dropdown-menu-right show" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(4px, 50px, 0px);">-->
-    <!--<a href="javascript:;" class="dropdown-item">Edit Profile</a>-->
-    <!--<a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>-->
-    <!--<a href="javascript:;" class="dropdown-item">Calendar</a>-->
-    <!--<a href="javascript:;" class="dropdown-item">Setting</a>-->
-    <!--<div class="dropdown-divider"></div>-->
-    <!--<a href="javascript:;" class="dropdown-item">Log Out</a>-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
-        <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-                <i class="icon-magnify"></i>
-            </button>
-        </span>
+    <div class="header__row">
+        <div class="header__column">
+            <a href="/" class="header__logo">
+                <img src="dist/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header__column">
+            <div class="input-group header__search">
+                <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="icon-magnify"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="header__column">
+            <div class="dropdown header-bell">
+                <a id="bell" data-toggle="dropdown" class="">
+                    <i class="icon-bell"></i>
+                    <span class="header-bell__label"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="bell">
+                   <li>notify 1</li>
+                   <li>notify 2</li>
+                   <li>notify 3</li>
+                   <li>notify 4</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
+
 
 <div class="wrapper">
 
@@ -293,8 +301,8 @@
             </table>
         </div>
     </div>
-</div>
 
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
