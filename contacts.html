@@ -28,6 +28,14 @@
     <!--</div>-->
     <!--</li>-->
     <!--</ul>-->
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+                <i class="icon-magnify"></i>
+            </button>
+        </span>
+    </div>
 </header>
 
 <div class="wrapper">
@@ -74,8 +82,63 @@
             </ul>
             <div class="people-head">
                 <div class="row">
-                    <div class="column col-lg-6"></div>
-                    <div class="column col-lg-6"></div>
+                    <div class="column col-md-6">
+                        <div class="btn-group">
+                            <a href="/" class="btn btn-app-bg">+ Add to contact list</a>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn  dropdown-toggle btn-app-border" data-toggle="dropdown">
+                                Set phase
+                                <span class="icon-chevron-down"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/">Potential</a></li>
+                                <li><a href="/">Contacting</a></li>
+                                <li><a href="/">Informing</a></li>
+                                <li><a href="/">Deciding</a></li>
+                                <li><a href="/">PotPartnerential</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn  dropdown-toggle btn-app-border" data-toggle="dropdown">
+                                Tag
+                                <span class="icon-chevron-down"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/">email letter</a></li>
+                                <li><a href="/">emily's contact</a></li>
+                                <li><a href="/">high</a></li>
+                                <li><a href="/">home church</a></li>
+                                <li><a href="/">low</a></li>
+                                <li><a href="/">mail letters</a></li>
+                                <li><a href="/">medium</a></li>
+                                <li><a href="/">Partner - Financial</a></li>
+                                <li><a href="/">prayer</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn  dropdown-toggle btn-app-border" data-toggle="dropdown">
+                                More
+                                <span class="icon-chevron-down"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/">Download as CSV File</a></li>
+                                <li><a href="/">Set as Inactive</a></li>
+                                <li><a href="/">Delete</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/">Log 'Sent Letter'</a></li>
+                                <li><a href="/">Print #10 Envelopes</a></li>
+                                <li><a href="/">Print 5160 labels</a></li>
+                                <li><a href="/">Enter MailChimp Info to Enable Export</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column col-md-6">
+                        <div class="people-tag-input">
+                            <label for="tag_filter">Filter by tag:</label>
+                            <input type="text" id="tag_filter" name="tag-filter" data-role="tagsinput">
+                        </div>
+                    </div>
                 </div>
             </div>
             <table class="people-table table">
@@ -99,7 +162,7 @@
                     <tr>
                         <td>
                             <div class="check-box">
-                                <input type="checkbox" id="checkox-1"  name="checkox-1">
+                                <input type="checkbox" id="checkox-1"  name="checkox-people">
                                 <label for="checkox-1"></label>
                             </div>
                         </td>
@@ -119,7 +182,7 @@
                     <tr>
                         <td>
                             <div class="check-box">
-                                <input type="checkbox" id="checkox-2"  name="checkox-2">
+                                <input type="checkbox" id="checkox-2"  name="checkox-people">
                                 <label for="checkox-2"></label>
                             </div>
                         </td>
@@ -139,7 +202,7 @@
                     <tr>
                         <td>
                             <div class="check-box">
-                                <input type="checkbox" id="checkox-3"  name="checkox-3">
+                                <input type="checkbox" id="checkox-3"  name="checkox-people">
                                 <label for="checkox-3"></label>
                             </div>
                         </td>
@@ -159,7 +222,7 @@
                     <tr>
                         <td>
                             <div class="check-box">
-                                <input type="checkbox" id="checkox-4"  name="checkox-4">
+                                <input type="checkbox" id="checkox-4"  name="checkox-people">
                                 <label for="checkox-4"></label>
                             </div>
                         </td>
@@ -179,9 +242,7 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-
 </div>
 
 
@@ -190,5 +251,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+<script src="dist/js/main.js"></script>
+<script src="dist/js/libs/bootstrap-tagsinput.min.js"></script>
 </body>
 </html>

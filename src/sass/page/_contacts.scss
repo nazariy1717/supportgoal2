@@ -1,5 +1,4 @@
 
-
 .people-nav{
   &__item{
     display: inline-block;
@@ -21,13 +20,18 @@
 }
 
 .people-head{
-  padding: 9px 17px;
+  padding: 9px 17px 0 17px;
   background-color: #fff;
+  .btn-group{
+    margin: 0 9px 9px 0;
+  }
+}
 
+.people-tag-input{
+  margin-bottom: 9px;
 }
 
 .people-table{
-
   thead{
     background-color: #f5f6fa;
     th{
@@ -79,4 +83,8 @@
       }
     }
   }
+}
+
+.people-tag-input{
+
 }

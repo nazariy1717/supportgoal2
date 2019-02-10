@@ -11,6 +11,12 @@ gulp.task('sass', function() {
       .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('js', function() {
+    return gulp.src('src/js/**/*.js')
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
 gulp.task('browser-sync', function () {
   browserSync({
     server: {
@@ -21,6 +27,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('watch', ['browser-sync', 'sass'], function () {
   gulp.watch('src/sass/**/*.scss', ['sass']);
+  gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
 });
