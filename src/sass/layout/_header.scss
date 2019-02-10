@@ -14,11 +14,16 @@
     margin: 0 -15px;
     align-items: center;
     height: 70px;
+    justify-content: space-between;
   }
   &__column{
     padding: 0 15px;
   }
   &__logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     display: block;
     width: 260px;
     img{
@@ -28,6 +33,10 @@
     }
   }
   &__search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 280px;
     width: 385px;
     input{
       box-shadow: none;
@@ -48,25 +57,63 @@
       background-color: var(--cool-green);
     }
   }
+  .header__nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
 }
 
 .header-bell{
   position: relative;
-  display: block;
-  padding: 24px 5px;
-  cursor: pointer;
+  display: inline-block;
+  margin-right: 35px;
+  padding: 24px 0;
+  &:after{
+    position: absolute;
+    content: '';
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 28px;
+    background-color: #ebebf2;
+  }
   .icon-bell{
     font-size: 17px;
     color: #bcbccb;
   }
   &__label{
     position: absolute;
-    right: 3px;
+    right: 0;
     top: 20px;
     width: 10px;
     border: 2px solid #fff;
     height: 10px;
     border-radius: 50%;
     background-color: #ffc06a;
+  }
+}
+
+.header-user{
+  display: inline-block;
+  &__img{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  }
+  &__icon{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 5px;
+    color: #a4afb7;
+  }
+  &__name{
+    color: var(--gunmetal);
+    font-size: 13px;
+    font-family: 'Proxima Nova Rg', sans-serif;
   }
 }

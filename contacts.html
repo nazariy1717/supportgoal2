@@ -12,37 +12,51 @@
 
 
 <header class="header">
-    <div class="header__row">
-        <div class="header__column">
-            <a href="/" class="header__logo">
-                <img src="dist/img/logo.png" alt="logo">
+
+    <a href="/" class="header__logo">
+        <img src="dist/img/logo.png" alt="logo">
+    </a>
+
+    <div class="input-group header__search">
+        <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+                <i class="icon-magnify"></i>
+            </button>
+        </span>
+    </div>
+
+    <div class="header__nav">
+        <div class="header-bell dropdown">
+            <a href="javascript:;" id="bell" data-toggle="dropdown" class="">
+                <i class="icon-bell"></i>
+                <span class="header-bell__label"></span>
             </a>
+            <ul class="dropdown-menu" aria-labelledby="bell">
+                <li><a href="">notify 1</a></li>
+                <li><a href="">notify 2</a></li>
+                <li><a href="">notify 3</a></li>
+                <li><a href="">notify 4</a></li>
+            </ul>
         </div>
-        <div class="header__column">
-            <div class="input-group header__search">
-                <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                        <i class="icon-magnify"></i>
-                    </button>
-                </span>
-            </div>
-        </div>
-        <div class="header__column">
-            <div class="dropdown header-bell">
-                <a id="bell" data-toggle="dropdown" class="">
-                    <i class="icon-bell"></i>
-                    <span class="header-bell__label"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="bell">
-                   <li>notify 1</li>
-                   <li>notify 2</li>
-                   <li>notify 3</li>
-                   <li>notify 4</li>
-                </ul>
-            </div>
+
+        <div class="header-user dropdown">
+            <a href="javascript:;" id="header-user" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span class="header-user__name">Adam Schwartz</span>
+                <i class="icon-chevron-down header-user__icon"></i>
+                <img src="https://i1.wp.com/app.zeplin.io/img/emotars/emotarTomato.png?ssl=1" alt="" class="header-user__img">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="header-user">
+                <li>
+                    <a href="/">dashboard</a>
+                </li>
+                <li>
+                    <a href="/">log out</a>
+                </li>
+            </ul>
         </div>
     </div>
+
 </header>
 
 
