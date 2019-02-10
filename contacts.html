@@ -41,13 +41,63 @@
 <div class="wrapper">
 
     <div class="sidebar">
-        <ul class="nav">
-            <li class="has-sub closed">
-                <a href="javascript:;">
-                    <b class="caret"></b>
-                    <i class="fa fa-th-large"></i>
-                    <span>Dashboard</span>
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-home"></i>Home</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="#contacts-collapse" class="sidebar-nav__link active collapsed" data-toggle="collapse" >
+                    <i class="sidebar-nav__icon icon-account-outline"></i>
+                    Contacts
+                    <i class="sidebar-nav__toggle icon-chevron-down"></i>
                 </a>
+                <ul class="sidebar-subnav collapse" id="contacts-collapse">
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link active">People</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Map</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Contact List</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Email List</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Namestorm</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Import people</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Duplicate people</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="#gifts-collapse" class="sidebar-nav__link collapsed" data-toggle="collapse" >
+                    <i class="sidebar-nav__icon icon-gift"></i>
+                    Gifts
+                    <i class="sidebar-nav__toggle icon-chevron-down"></i>
+                    <ul class="sidebar-subnav collapse" id="gifts-collapse">
+                        <li class="sidebar-subnav__item">
+                            <a href="/" class="sidebar-subnav__link active">Gifts 1</a>
+                        </li>
+                        <li class="sidebar-subnav__item">
+                            <a href="/" class="sidebar-subnav__link active">Gifts 2</a>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-check-circle-outline"></i>Tasks</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-lifebuoy"></i>Help Center</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-settings"></i>Settings</a>
             </li>
         </ul>
     </div>

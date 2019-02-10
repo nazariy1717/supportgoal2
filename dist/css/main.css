@@ -257,11 +257,82 @@ label {
 
 .sidebar {
   position: fixed;
+  z-index: 9;
   top: 70px;
   left: 0;
   bottom: 0;
   width: 260px;
+  overflow: hidden;
   background-color: var(--dusk); }
+
+.sidebar-nav {
+  position: absolute;
+  left: 0;
+  right: -17px;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  padding: 5px 0; }
+  .sidebar-nav__item {
+    display: block;
+    margin-bottom: 5px; }
+  .sidebar-nav__link {
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 53px;
+    color: #fff;
+    transition: all 0.3s;
+    text-decoration: none;
+    background-color: transparent; }
+    .sidebar-nav__link:hover, .sidebar-nav__link:active, .sidebar-nav__link:focus {
+      text-decoration: none;
+      color: #fff;
+      background-color: #3c3b54; }
+    .sidebar-nav__link.active {
+      color: #fff;
+      background-color: #3c3b54; }
+      .sidebar-nav__link.active:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: var(--cool-green); }
+      .sidebar-nav__link.active .sidebar-nav__icon {
+        color: var(--cool-green); }
+    .sidebar-nav__link.collapsed .sidebar-nav__toggle {
+      transform: rotate(-90deg); }
+  .sidebar-nav__icon {
+    font-size: 18px;
+    margin: 0 12px 4px 0;
+    vertical-align: middle;
+    display: inline-block;
+    color: #a5a4bf; }
+  .sidebar-nav__toggle {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    font-size: 22px;
+    transition: all 0.3s; }
+
+.sidebar-subnav {
+  padding: 0 0 0 52px; }
+  .sidebar-subnav__link {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 43px;
+    color: rgba(255, 255, 255, 0.54);
+    transition: all 0.3s;
+    text-decoration: none; }
+    .sidebar-subnav__link:hover, .sidebar-subnav__link.active {
+      color: #fff; }
 
 .dashboard {
   position: absolute;
