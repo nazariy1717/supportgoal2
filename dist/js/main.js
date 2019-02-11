@@ -14,6 +14,10 @@ let frontend ={
                 });
             }
         });
+
+        $(document).on('click', '.header-toggle', function(){
+           $('.sidebar').toggleClass('active');
+        });
     }
 };
 

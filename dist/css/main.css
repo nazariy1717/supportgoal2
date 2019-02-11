@@ -229,6 +229,9 @@ label {
   height: 70px;
   z-index: 9;
   border-bottom: 1px solid rgba(112, 112, 112, 0.17); }
+  @media (max-width: 767px) {
+    .header {
+      height: 150px; } }
   .header__row {
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -246,6 +249,15 @@ label {
     left: 0;
     display: block;
     width: 260px; }
+    @media (max-width: 991px) {
+      .header__logo {
+        width: 175px; } }
+    @media (max-width: 767px) {
+      .header__logo {
+        top: 20px;
+        left: 15px;
+        transform: none;
+        width: 125px; } }
     .header__logo img {
       display: block;
       margin: auto;
@@ -256,6 +268,16 @@ label {
     transform: translateY(-50%);
     left: 280px;
     width: 385px; }
+    @media (max-width: 991px) {
+      .header__search {
+        left: 195px;
+        width: 275px; } }
+    @media (max-width: 767px) {
+      .header__search {
+        left: 15px;
+        top: 90px;
+        transform: none;
+        width: 200px; } }
     .header__search input {
       box-shadow: none; }
     .header__search input:focus {
@@ -276,12 +298,20 @@ label {
     top: 50%;
     transform: translateY(-50%);
     right: 15px; }
+    @media (max-width: 767px) {
+      .header .header__nav {
+        right: 15px;
+        top: 0;
+        transform: none; } }
 
 .header-bell {
   position: relative;
   display: inline-block;
   margin-right: 35px;
   padding: 24px 0; }
+  @media (max-width: 767px) {
+    .header-bell {
+      margin-right: 15px; } }
   .header-bell:after {
     position: absolute;
     content: '';
@@ -291,6 +321,9 @@ label {
     width: 1px;
     height: 28px;
     background-color: #ebebf2; }
+    @media (max-width: 767px) {
+      .header-bell:after {
+        right: -5px; } }
   .header-bell .icon-bell {
     font-size: 17px;
     color: #bcbccb; }
@@ -321,6 +354,31 @@ label {
     color: var(--gunmetal);
     font-size: 13px;
     font-family: 'Proxima Nova Rg', sans-serif; }
+
+.header-toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  outline: 0; }
+  @media (max-width: 767px) {
+    .header-toggle {
+      display: block; } }
+  .header-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000; }
+  .header-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
 
 .breadcrumb {
   padding: 5px 15px;
@@ -359,6 +417,14 @@ label {
   width: 260px;
   overflow: hidden;
   background-color: var(--dusk); }
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 175px; } }
+  @media (max-width: 767px) {
+    .sidebar {
+      display: none; } }
+  .sidebar.active {
+    display: block; }
 
 .sidebar-nav {
   position: absolute;
@@ -383,6 +449,9 @@ label {
     transition: all 0.3s;
     text-decoration: none;
     background-color: transparent; }
+    @media (max-width: 991px) {
+      .sidebar-nav__link {
+        padding-left: 15px; } }
     .sidebar-nav__link:hover, .sidebar-nav__link:active, .sidebar-nav__link:focus {
       text-decoration: none;
       color: #fff;
@@ -436,6 +505,13 @@ label {
   top: 70px;
   bottom: 0;
   background-color: var(--pale-grey); }
+  @media (max-width: 991px) {
+    .dashboard {
+      left: 175px; } }
+  @media (max-width: 767px) {
+    .dashboard {
+      left: 0;
+      top: 150px; } }
   .dashboard__content {
     margin: auto;
     max-width: 1200px;
@@ -464,6 +540,12 @@ label {
 
 .people-tag-input {
   margin-bottom: 9px; }
+
+@media (max-width: 767px) {
+  .people-table {
+    overflow-x: auto; }
+    .people-table table {
+      border-collapse: collapse; } }
 
 .people-table thead {
   background-color: #f5f6fa; }

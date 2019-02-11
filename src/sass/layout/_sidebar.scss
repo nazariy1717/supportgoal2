@@ -8,6 +8,15 @@
   width: 260px;
   overflow: hidden;
   background-color: var(--dusk);
+  @media(max-width: 991px){
+    width: 175px;
+  }
+  @media(max-width: 767px){
+    display: none;
+  }
+  &.active{
+    display: block;
+  }
 }
 
 .sidebar-nav{
@@ -34,6 +43,9 @@
     transition: all 0.3s;
     text-decoration: none;
     background-color: transparent;
+    @media(max-width: 991px){
+      padding-left: 15px;
+    }
     &:hover,&:active,&:focus{
       text-decoration: none;
       color: #fff;

@@ -7,6 +7,9 @@
   height: 70px;
   z-index: 9;
   border-bottom: 1px solid rgba(112, 112, 112, 0.17);
+  @media(max-width: 767px){
+    height: 150px;
+  }
   &__row{
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -15,6 +18,7 @@
     align-items: center;
     height: 70px;
     justify-content: space-between;
+
   }
   &__column{
     padding: 0 15px;
@@ -26,6 +30,15 @@
     left: 0;
     display: block;
     width: 260px;
+    @media(max-width: 991px){
+      width: 175px;
+    }
+    @media(max-width: 767px){
+      top: 20px;
+      left: 15px;
+      transform: none;
+      width: 125px;
+    }
     img{
       display: block;
       margin: auto;
@@ -38,6 +51,16 @@
     transform: translateY(-50%);
     left: 280px;
     width: 385px;
+    @media(max-width: 991px){
+      left: 195px;
+      width: 275px;
+    }
+    @media(max-width: 767px){
+      left: 15px;
+      top: 90px;
+      transform: none;
+      width: 200px;
+    }
     input{
       box-shadow: none;
     }
@@ -62,6 +85,11 @@
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
+    @media(max-width: 767px){
+      right: 15px;
+      top: 0;
+      transform: none;
+    }
   }
 }
 
@@ -70,6 +98,9 @@
   display: inline-block;
   margin-right: 35px;
   padding: 24px 0;
+  @media(max-width: 767px){
+    margin-right: 15px;
+  }
   &:after{
     position: absolute;
     content: '';
@@ -79,6 +110,9 @@
     width: 1px;
     height: 28px;
     background-color: #ebebf2;
+    @media(max-width: 767px){
+      right: -5px;
+    }
   }
   .icon-bell{
     font-size: 17px;
@@ -115,5 +149,33 @@
     color: var(--gunmetal);
     font-size: 13px;
     font-family: 'Proxima Nova Rg', sans-serif;
+  }
+}
+
+.header-toggle{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  outline: 0;
+  @media(max-width: 767px){
+    display: block;
+  }
+  .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: #000;
+  }
+  .icon-bar + .icon-bar{
+    margin-top: 4px;
   }
 }
