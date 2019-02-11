@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>SupportGoal Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css"/>
+</head>
+<body>
+
+
+<header class="header">
+
+    <a href="/" class="header__logo">
+        <img src="dist/img/logo.png" alt="logo">
+    </a>
+
+    <div class="input-group header__search">
+        <input type="text" class="form-control" placeholder="Search for names, emails, phone numbers etc.">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+                <i class="icon-magnify"></i>
+            </button>
+        </span>
+    </div>
+
+    <div class="header__nav">
+        <div class="header-bell dropdown">
+            <a href="javascript:;" id="bell" data-toggle="dropdown" class="">
+                <i class="icon-bell"></i>
+                <span class="header-bell__label"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="bell">
+                <li><a href="">notify 1</a></li>
+                <li><a href="">notify 2</a></li>
+                <li><a href="">notify 3</a></li>
+                <li><a href="">notify 4</a></li>
+            </ul>
+        </div>
+
+        <div class="header-user dropdown">
+            <a href="javascript:;" id="header-user" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                <span class="header-user__name">Adam Schwartz</span>
+                <i class="icon-chevron-down header-user__icon"></i>
+                <img src="https://i1.wp.com/app.zeplin.io/img/emotars/emotarTomato.png?ssl=1" alt="" class="header-user__img">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="header-user">
+                <li>
+                    <a href="/">dashboard</a>
+                </li>
+                <li>
+                    <a href="/">log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button type="button" class="header-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</header>
+
+
+<div class="wrapper">
+
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-home"></i>Home</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="#contacts-collapse" class="sidebar-nav__link active collapsed" data-toggle="collapse" >
+                    <i class="sidebar-nav__icon icon-account-outline"></i>
+                    Contacts
+                    <i class="sidebar-nav__toggle icon-chevron-down"></i>
+                </a>
+                <ul class="sidebar-subnav collapse" id="contacts-collapse">
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link active">People</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Map</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Contact List</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Email List</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Namestorm</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Import people</a>
+                    </li>
+                    <li class="sidebar-subnav__item">
+                        <a href="/" class="sidebar-subnav__link">Duplicate people</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="#gifts-collapse" class="sidebar-nav__link collapsed" data-toggle="collapse" >
+                    <i class="sidebar-nav__icon icon-gift"></i>
+                    Gifts
+                    <i class="sidebar-nav__toggle icon-chevron-down"></i>
+                    <ul class="sidebar-subnav collapse" id="gifts-collapse">
+                        <li class="sidebar-subnav__item">
+                            <a href="/" class="sidebar-subnav__link active">Gifts 1</a>
+                        </li>
+                        <li class="sidebar-subnav__item">
+                            <a href="/" class="sidebar-subnav__link active">Gifts 2</a>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-check-circle-outline"></i>Tasks</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-lifebuoy"></i>Help Center</a>
+            </li>
+            <li class="sidebar-nav__item">
+                <a href="/" class="sidebar-nav__link"><i class="sidebar-nav__icon icon-settings"></i>Settings</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dashboard">
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Admin</a></li>
+            <li><a href="/">Contacts</a></li>
+            <li><a href="/">People</a></li>
+            <li class="active">Aglae Hyatt</li>
+        </ul>
+        <div class="dashboard__content">
+            <div class="profile">
+                <div class="profile__row">
+                    <div class="profile__left">
+                        <div class="profile-user">
+                            <div class="profile-user__top">
+                                <img src="data:image/jpeg;base64,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" class="profile-user__logo">
+                                <div class="profile-user__name">Woman Peacoat</div>
+                                <a href="/" class="btn btn-app-bg profile-user__btn">+ Add to contacts</a>
+                            </div>
+                        </div>
+                        <div class="profile-contacts">
+                            <span class="profile__title">Contact information</span>
+                            <ul class="profile-contacts__list">
+                                <li><i class="icon-phone"></i>1-782-940-8282 x89591</li>
+                                <li><i class="icon-email-outline"></i>johndoe@gmail.com</li>
+                                <li><i class="icon-map-marker"></i>953 Jerrold Crossing </li>
+                            </ul>
+                        </div>
+                        <div class="profile-block">
+                            <span class="profile-block__title">Tasks</span>
+                            <a href="/" class="profile-block__link">add task</a>
+                            <p class="profile-block__txt">No tasks</p>
+                        </div>
+                        <div class="profile-block">
+                            <span class="profile-block__title">Special dates</span>
+                            <a href="/" class="profile-block__link">add date</a>
+                            <p class="profile-block__txt">anniversary - December 5</p>
+                        </div>
+                        <div class="profile-block">
+                            <span class="profile-block__title">Email lists</span>
+                            <a href="/" class="profile-block__link">add email</a>
+                        </div>
+                        <div class="profile-block">
+                            <span class="profile-block__title">Giving</span>
+                            <a href="/" class="profile-block__link">Add expected gift</a>
+                        </div>
+                        <div class="profile-block">
+                            <span class="profile-block__title">Tags</span>
+                            <a href="/" class="profile-block__link">Edit</a>
+                            <ul class="profile-tags">
+                                <li class="profile-tasks__item label label-potencial">home church<span>x</span></li>
+                                <li class="profile-tasks__item label label-contacting">Partner - Financial<span>x</span></li>
+                                <li class="profile-tasks__item label label-partner">Partner<span>x</span></li>
+                                <li class="profile-tasks__item label label-partner">Partner<span>x</span></li>
+                                <li class="profile-tasks__item label label-potencial">home church<span>x</span></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="profile__right">
+                        <div class="profile-editor">
+                            <span class="profile-editor__title">Add a Note</span>
+                            <div id="summernote">Hello </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn  dropdown-toggle btn-app-border" data-toggle="dropdown">
+                                            Log Contact
+                                            <span class="icon-chevron-down"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/">1</a></li>
+                                            <li><a href="/">2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button type="button" class="btn btn-app-bg profile-editor__btn">Add a Note</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-history">
+                            <span class="profile-editor__title">Contact history</span>
+                            <div class="profile-timeline">
+                                <div class="profile-timeline__item">
+                                    <div class="profile-timeline__circle">
+                                        <i class="icon-account-arrow-right-outline"></i>
+                                    </div>
+                                    <span class="profile-timeline__title">Woman Peacoat, added to your contact list</span>
+                                    <span class="profile-timeline__date">4 hours ago</span>
+                                </div>
+                                <div class="profile-timeline__item">
+                                    <div class="profile-timeline__circle">
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                    <span class="profile-timeline__title">Called - no answer</span>
+                                    <span class="profile-timeline__date">8 hours ago</span>
+                                </div>
+                                <div class="profile-timeline__item">
+                                    <div class="profile-timeline__circle">
+                                        <i class="icon-email-outline"></i>
+                                    </div>
+                                    <span class="profile-timeline__title">Sent email</span>
+                                    <span class="profile-timeline__date">Sun, Nov 4 2018 at 2:57 pm</span>
+                                </div>
+                                <div class="profile-timeline__item">
+                                    <div class="profile-timeline__circle">
+                                        <i class="icon-forum"></i>
+                                    </div>
+                                    <span class="profile-timeline__title">Sent text</span>
+                                    <span class="profile-timeline__date">Sun, Nov 4 2018 at 2:20 pm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+<script src="dist/js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+            height: 260
+        });
+    });
+</script>
+</body>
+</html>

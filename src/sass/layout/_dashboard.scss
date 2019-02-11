@@ -4,7 +4,7 @@
   left: 260px;
   right: 0;
   top: 70px;
-  bottom: 0;
+  min-height: calc(100vh - 70px);
   background-color: var(--pale-grey);
   @media(max-width: 991px){
     left: 175px;

@@ -1,0 +1,230 @@
+
+.profile{
+  padding: 30px 0;
+  background-color: #fff;
+  &__row{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__left{
+    flex: 0 0 300px;
+    max-width: 300px;
+    @media(max-width: 991px){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &__right{
+    border-left: 1px solid #F8F8F9;
+    flex: 0 0 calc(100% - 300px);
+    max-width: calc(100% - 300px);
+    @media(max-width: 991px){
+      border-left: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &__title{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--gunmetal);
+    margin-bottom: 15px;
+  }
+}
+
+.profile-user{
+  &__top{
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #F8F8F9;
+  }
+  &__logo{
+    display: block;
+    max-width: 70px;
+    border-radius: 50%;
+    margin: auto auto 15px;
+  }
+  &__name{
+    display: block;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    color: var(--gunmetal);
+    margin-bottom: 15px;
+  }
+  &__btn{
+    display: block;
+    width: 155px;
+    margin: auto;
+  }
+}
+
+.profile-contacts{
+  padding: 0 20px;
+  border-bottom: 1px solid #F8F8F9;
+  margin-bottom: 15px;
+  &__list{
+    li{
+      position: relative;
+      display: block;
+      font-family: 'Lato',sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1.54;
+      color: var(--gunmetal);
+      padding-left: 30px;
+      margin-bottom: 10px;
+      i{
+        position: absolute;
+        left: 0;
+        color: var(--silver);
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.profile-block{
+  position: relative;
+  padding: 0 15px 15px 15px;
+  border-bottom: 1px solid #F8F8F9;
+  margin-bottom: 15px;
+  &__title{
+    display: block;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--gunmetal);
+    margin-bottom: 15px;
+  }
+  &__link{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: block;
+    text-decoration: underline;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: var(--cool-green);
+    &:hover{
+      color: var(--cool-green);
+      text-decoration: none;
+    }
+  }
+}
+
+.profile-tags{
+  li{
+    line-height: 16px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    span{
+      display: inline-block;
+      margin: 0 2px;
+      cursor: pointer;
+    }
+  }
+}
+
+.profile-editor{
+  padding: 0 70px 0 30px;
+  margin-bottom: 45px;
+  @media(max-width: 767px){
+    padding: 0 20px;
+  }
+  &__title{
+    display: block;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.11;
+    color: var(--gunmetal);
+    margin-bottom: 15px;
+  }
+  &__btn{
+    display: block;
+    width: 155px;
+    margin-left: auto;
+  }
+  #summernote{
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .note-editor.note-frame{
+    border: 1px solid #e8e9ec;
+  }
+  .panel-default>.panel-heading{
+    background-color: #fff; 
+  }
+  .note-editor.note-frame .note-statusbar{
+    background-color: #fff;
+  }
+}
+
+
+.profile-history{
+  padding: 0 70px 0 30px;
+}
+
+.profile-timeline{
+  &__item{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 45px;
+    &:last-of-type{
+      &:before{
+        display: none;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 42px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(0,0,0,0.16);
+    }
+  }
+  &__circle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.16);
+    i{
+      font-size: 20px;
+      color: var(--silver);
+    }
+  }
+  &__title{
+    display: block;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 1.46;
+    color: var(--gunmetal);
+  }
+  &__date{
+    display: block;
+    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.54;
+    color: var(--gunmetal);
+  }
+}
